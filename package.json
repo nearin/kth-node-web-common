@@ -1,0 +1,24 @@
+{
+  "name": "kth-node-web-common",
+  "version": "0.1.0",
+  "description": "Common components for node-web projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"ok\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KTH/kth-node-web-common.git"
+  },
+  "keywords": [
+    "kth",
+    "nodejs",
+    "web"
+  ],
+  "author": "Sebastian Ware <sebastian@urbantalk.se> (https://github.com/jhsware)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KTH/kth-node-web-common/issues"
+  },
+  "homepage": "https://github.com/KTH/kth-node-web-common#readme"
+}
