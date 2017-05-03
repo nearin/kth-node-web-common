@@ -2,9 +2,11 @@
   "name": "kth-node-web-common",
   "version": "0.1.0",
   "description": "Common components for node-web projects",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"ok\""
+    "test": "echo \"ok\"",
+    "test-debug": "node_modules/mocha/bin/mocha --debug-brk test/**/test-*.js",
+    "preversion": "standard && npm run test",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -25,9 +27,16 @@
     "entities": "^1.1.1",
     "handlebars": "^4.0.6",
     "kth-node-cortina-block": "^1.0.4",
-    "kth-node-i18n": "^1.0.2",
-    "kth-node-log": "^2.0.3",
     "kth-node-redis": "^1.2.2",
     "locale": "^0.1.0"
+  },
+  "peerDependencies": {
+    "kth-node-i18n": "^1.0.2",
+    "kth-node-log": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "standard": "^10.0.2"
   }
 }
