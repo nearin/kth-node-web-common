@@ -1,6 +1,6 @@
 {
   "name": "kth-node-web-common",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "Common components for node-web projects",
   "scripts": {
     "test": "echo \"ok\"",
@@ -32,7 +32,8 @@
   },
   "peerDependencies": {
     "kth-node-i18n": "^1.0.2",
-    "kth-node-log": "^2.0.3"
+    "kth-node-log": "^2.0.3",
+    "kth-style": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
