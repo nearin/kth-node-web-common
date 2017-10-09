@@ -30,6 +30,9 @@ Uses https://github.com/KTH/kth-node-cortina-block
 ```JavaScript
 route.use('/app/mount/point', require('kth-node-web-common/lib/web/cortina')({
   blockUrl: 'https://url.to/fetch/block',
+  headers: {  // Optional way of passing headers to kth-node-cortina-block request
+    'User-Agent': 'something...'
+  },
   addBlocks: {  // Optional way of adding Cortina blocks on top of defaults
     menu: '1.678435'
   },
